@@ -491,6 +491,7 @@ button {
 }
 
 .shopping__card {
+    background-color: #FBFBFB;
     width: 100%;
 }
 
@@ -556,6 +557,7 @@ button {
     width: 100%;
     display: flex;
     position: relative;
+    background-color: #FBFBFB;
 }
 
 .about__decoration {
