@@ -899,6 +899,7 @@ button {
     padding: 32px 0 27px 23px;
     border-bottom: 1px solid #46A358;
     margin-bottom: 7px;
+    background-color: #f5f5f5;
 }
 
 .text__align__center {
@@ -1722,4 +1723,7 @@ button {
     font-weight: 400;
     line-height: 16px;
     color: #46A358;
+}
+.home__small__img__box__active{
+    border: 1px solid #46A358;
 }

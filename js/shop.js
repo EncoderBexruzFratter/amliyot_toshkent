@@ -99,3 +99,16 @@ shop__left__card__plus__btn.forEach(function (item, index) {
         shop__left__card__quantity__number[index].textContent * 1 + 1;
   });
 });
+let home__small__img__box = document.querySelectorAll(".home__small__img__box")
+let home__big__img__box = document.querySelector(".home__big__img__box")
+let home__small__img = document.querySelectorAll(".home__small__img")
+let home__big__img = document.querySelector(".home__big__img")
+home__small__img__box.forEach(function(item, index){
+    item.addEventListener('click' , function(){
+        home__small__img__box.forEach(function(item , index){
+            item.classList.remove("home__small__img__box__active")
+        })
+        home__small__img__box[index].classList.add("home__small__img__box__active")
+        home__big__img.src = home__small__img[index].src
+    })
+})
