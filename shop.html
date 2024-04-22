@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__left sm__display__none">
+                <a href="" class="header__logo__link">
+                    <img src="./img/header/header-logo.svg" alt="" class="header-logo" />
+                </a>
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="./index.html" class="header__nav__link">Home</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Shop</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Plant Care</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__inp_box">
+                <button class="search__btn mr-8px">
+                    <img src="./img/header/search_res.svg" alt="" class="header__search__img_res" />
+                </button>
+                <input type="text" class="seacr_inp" placeholder="Find your plants">
+            </div>
+            <button class="header__nomalum__btn">
+                <img src="./img/header/Filter.svg" alt="" class="header__nomalum_img">
+            </button>
+            <div class="header__right sm__display__none">
+                <button class="search__btn md__display__none">
+                    <img src="./img/header/search.svg" alt="" class="header__search__img" />
+                </button>
+                <button class="basket__btn">
+                    <img src="./img/header/basket.svg" alt="" class="header__basket__img" />
+                </button>
+                <button class="login__btn">
+                    <img src="./img/header/login.svg" alt="" class="header__login__logo" />
+                    Login
+                </button>
+            </div>
+            <button class="header__hanburger__btn sm__display__none">
+                <img src="./img/header/hamburger.svg" alt="" class="header__hamburger__img">
+            </button>
+        </div>
+    </header>
+    <section class="home">
+        <div id="home" class="home__container">
+            <div class="home_top">
+                <h2 class="home__top__title home__top__title__active">Home</h2>
+                <h2 class="home__top__title"> / Shop</h2>
+            </div>
+          <div class="home__bottom">
+            <div class="home__left">
+                <div class="home__imgs__col">
+                    <div class="home__small__img__box">
+                        <img src="./img/home/home_3.svg" alt="" class="home__small__img">
+                    </div>
+                    <div class="home__small__img__box">
+                        <img src="./img/home/home_1.svg" alt="" class="home__small__img">
+                    </div>
+                    <div class="home__small__img__box">
+                        <img src="./img/home/home_4.svg" alt="" class="home__small__img">
+                    </div>
+                    <div class="home__small__img__box">
+                        <img src="./img/home/home_2.svg" alt="" class="home__small__img">
+                    </div>
+                </div>
+                <div class="home__big__img__box">
+                    <button class="home__search__btn">
+                        <img src="./img/header/search.svg" alt="" class="home__search__img">
+                    </button>
+                    <img src="./img/home/home_1.svg" alt="" class="home__big__img">
+                </div>
+            </div>
+            <div class="home__right">
+                <h3 class="home__right__title">Barberton Daisy</h3>
+                <div class="home__right__price__review">
+                    <h4 class="home__right__price">$<span id="home__right__price">119.00</span></h4>
+                    <div class="home__right__review__box">
+                        <div class="home__right__star__box">
+                            <img src="./img/home/star_active.svg" alt="" class="home__right__star__img">
+                            <img src="./img/home/star_active.svg" alt="" class="home__right__star__img">
+                            <img src="./img/home/star_active.svg" alt="" class="home__right__star__img">
+                            <img src="./img/home/star_active.svg" alt="" class="home__right__star__img">
+                            <img src="./img/home/star.svg" alt="" class="home__right__star__img">
+                        </div>
+                        <h4 class="home__review__title">19 Customer Review</h4>
+                    </div>
+                </div>
+                <h5 class="home__right__description__title">Short Description:</h5>
+                <p class="home__right__description__text">The ceramic cylinder planters come with a wooden stand to help
+                    elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help
+                    elevate your plants off the ground. </p>
+                <div class="home__right__size">
+                    <h5 class="home__right__size__title">Size:</h5>
+                    <div class="home__right__size__box">
+                        <button class="home__right__size__btn home__right__size__btn__active">S</button>
+                        <button class="home__right__size__btn">M</button>
+                        <button class="home__right__size__btn">L</button>
+                        <button class="home__right__size__btn">XL</button>
+                    </div>
+                </div>
+                <div class="home__right__shopping__box">
+                    <div class="home__right__number__box">
+                        <button class="home__right__minus__btn">-</button>
+                        <p class="home__right__number">1</p>
+                        <button class="home__right__plus__btn">+</button>
+                    </div>
+                    <button class="home__right__buy__now__btn">Buy NOW</button>
+                    <button class="home__right__add__btn">Add to cart</button>
+                    <button class="home__right__heart__btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 18.8873C9.71527 18.8873 9.44077 18.7842 9.22684 18.5968C8.41888 17.8903 7.63992 17.2264 6.95267 16.6408L6.94916 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630341 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563507 3.94485 1.58661 2.83508C2.62192 1.71219 4.04251 1.09375 5.58716 1.09375C6.74164 1.09375 7.79892 1.45874 8.72955 2.1785C9.19922 2.54181 9.62494 2.98645 10 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8059 13.4378 15.0661 14.9205 13.0515 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 10 18.8873ZM5.58716 2.26532C4.37363 2.26532 3.25882 2.74963 2.44781 3.62915C1.62476 4.52194 1.17142 5.75607 1.17142 7.10434C1.17142 8.52692 1.70013 9.79919 2.88559 11.2296C4.03137 12.6122 5.73563 14.0645 7.70889 15.7462L7.71255 15.7492C8.4024 16.3371 9.18442 17.0036 9.99832 17.7153C10.8171 17.0023 11.6003 16.3347 12.2916 15.7458C14.2647 14.0642 15.9688 12.6122 17.1146 11.2296C18.2999 9.79919 18.8286 8.52692 18.8286 7.10434C18.8286 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6264 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9872 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03036 10 5.03036C9.73709 5.03036 9.49966 4.89548 9.36478 4.66949C9.10263 4.23004 8.65524 3.60199 8.01285 3.10516C7.29218 2.54791 6.47598 2.26532 5.58716 2.26532Z"
+                                fill="#46A358" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="home__categories__box">
+                    <h5 class="home__categories__title">
+                        SKU: 
+                        <span class="home__categories__text">1995751877966</span>
+                    </h5>
+                    <h5 class="home__categories__title">
+                        Categories: 
+                        <span class="home__categories__text">Potter Plants</span>
+                    </h5>
+                    <h5 class="home__categories__title">
+                        Tags: 
+                        <span class="home__categories__text">Home, Garden, Plants</span>
+                    </h5>
+                </div>
+                <div class="home__right__products__box">
+                    <h6 class="home__right__products__title">Share this products:</h6>
+                    <div class="home__right__products__icon__box">
+                        <a href="#" target="_blank" class="home__right__products__link" style="margin-right: 20px;">
+                            <img src="./img/home/Facebook.svg" alt="" class="home__right__products__icon">
+                        </a>
+                        <a href="#" target="_blank" class="home__right__products__link">
+                            <img src="./img/home/Twitter.svg    " alt="" class="home__right__products__icon" style="margin-right: 20px;">
+                        </a>
+                        <a href="#" target="_blank" class="home__right__products__link">
+                            <img src="./img/home/Linkedin.svg" alt="" class="home__right__products__icon" style="margin-right: 17.5px;">
+                        </a>
+                        <a href="#" target="_blank" class="home__right__products__link">
+                            <img src="./img/home/Message.svg" alt="" class="home__right__products__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="shop__cards" class="home__container">
+            <div class="home_top">
+                <h2 class="home__top__title home__top__title__active">Home</h2>
+                <h2 class="home__top__title"> / Shop</h2>
+                <h2 class="home__top__title"> / Shopping Cart </h2>
+            </div>
+            <div class="shop__bottom">
+                <div class="shop__left">
+                    <div class="shop__left__top">
+                        <h2 class="shop__left__top__title" style="margin-right: 245px;">Products</h2>
+                        <h2 class="shop__left__top__title" style="margin-right: 108px;">Price</h2>
+                        <h2 class="shop__left__top__title" style="margin-right: 97px;">Quantity</h2>
+                        <h2 class="shop__left__top__title">Total</h2>
+                    </div>
+                    <div class="shop__left__bottom">
+                        <div class="shop__left_card">
+                            <img src="./img/home/shop/shop_1.png" alt="" class="shop__left__card__img">
+                            <div class="shop__left__card__name__box">
+                                <h3 class="shop__left__card__name">Barberton Daisy</h3>
+                                <h3 class="home__categories__title fs_16px">
+                                    SKU: 
+                                    <span class="home__categories__text">19957518757065</span>
+                                </h3>
+                            </div>
+                            <p class="shop__left__card__price">$119.00</p>
+                            <div class="shop__left__card__quantity">
+                                <button class="shop__left__card__minus__btn">-</button>
+                                <p class="shop__left__card__quantity__number">2</p>
+                                <button class="shop__left__card__plus__btn">+</button>
+                            </div>
+                            <p class="shop__left__card__total">$238.00</p>
+                            <button class="shop__left__card__del__btn">
+                                <img src="./img/home/shop/Delete.svg" alt="" class="shop__left__card__del__img">
+                            </button>
+                        </div>
+                        <div class="shop__left_card">
+                            <img src="./img/home/shop/shop_3.png" alt="" class="shop__left__card__img">
+                            <div class="shop__left__card__name__box">
+                                <h3 class="shop__left__card__name">Blushing Bromeliad</h3>
+                                <h3 class="home__categories__title fs_16px">
+                                    SKU: 
+                                    <span class="home__categories__text">19957518757065</span>
+                                </h3>
+                            </div>
+                            <p class="shop__left__card__price">$139.00</p>
+                            <div class="shop__left__card__quantity">
+                                <button class="shop__left__card__minus__btn">-</button>
+                                <p class="shop__left__card__quantity__number">6</p>
+                                <button class="shop__left__card__plus__btn">+</button>
+                            </div>
+                            <p class="shop__left__card__total">$834.00</p>
+                            <button class="shop__left__card__del__btn">
+                                <img src="./img/home/shop/Delete.svg" alt="" class="shop__left__card__del__img">
+                            </button>
+                        </div>
+                        <div class="shop__left_card">
+                            <img src="./img/home/shop/shop_2.png" alt="" class="shop__left__card__img">
+                            <div class="shop__left__card__name__box">
+                                <h3 class="shop__left__card__name">Aluminum Plant</h3>
+                                <h3 class="home__categories__title fs_16px">
+                                    SKU: 
+                                    <span class="home__categories__text">19957518757065</span>
+                                </h3>
+                            </div>
+                            <p class="shop__left__card__price">$179.00</p>
+                            <div class="shop__left__card__quantity">
+                                <button class="shop__left__card__minus__btn">-</button>
+                                <p class="shop__left__card__quantity__number">9</p>
+                                <button class="shop__left__card__plus__btn">+</button>
+                            </div>
+                            <p class="shop__left__card__total">$1,611.00</p>
+                            <button class="shop__left__card__del__btn">
+                                <img src="./img/home/shop/Delete.svg" alt="" class="shop__left__card__del__img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__right">
+                    <h2 class="shot__right__top__title">Cart Totals</h2>
+                    <form class="shop__right__form" action="#">
+                        <label for="apply" class="shop__right__inp__title">Coupon Apply</label>
+                        <div class="form__imp__box">
+                            <input type="text" id="apply" class="shop__right__inp" placeholder="Enter coupon code here...">
+                            <button class="shop__right__apply__btn">Apply</button>
+                        </div>
+                    </form>
+                    <div class="shop__right__count__box">
+                        <div class="shop__right__count__subtotal__box">
+                            <h3 class="shop__right__count__subtotal">Subtotal</h3>
+                            <p class="shop__right__count__subtotal__number">$2,683.00</p>
+                        </div>
+                        <div class="shop__right__count__subtotal__box">
+                            <h3 class="shop__right__count__subtotal" style="margin-bottom: 6px;">Coupon Discount</h3>
+                            <p class="shop__right__count__subtotal">(-) 00.00</p>
+                        </div>
+                        <div class="shop__right__count__subtotal__box">
+                            <h3 class="shop__right__count__subtotal">Shiping</h3>
+                            <p class="shop__right__count__subtotal__number">$16.00</p>
+                        </div>
+                    </div>
+                        <p class="shop__right__shipping__text">View shipping charge</p>
+                        <div class="shop__right__count__subtotal__box" style="margin-bottom: 29px;">
+                            <h4 class="shop__right__total">Total</h4>
+                            <p class="shop__right__total__number">$2,699.00</p>
+                        </div>
+                    <button class="shop__right__checkout__btn">Proceed To Checkout</button>
+                    <button class="shop__right__continue__btn">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="description__container">
+            <div class="description__top">
+                <h2 class="description_title description__active">Product Description</h2>
+                <h2 class="description_title">Reviews (19)</h2>
+            </div>
+            <div class="description__bottom description__bottom__active">
+                <p class="description__text mb_18px">
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique
+                    auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper.
+                    Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                    <br>
+                    <br>
+                    Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros
+                    eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis
+                    vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere
+                    nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam
+                    gravida vehicula tellus, in imperdiet ligula euismod eget. The ceramic cylinder planters come with a
+                    wooden stand to help elevate your plants off the ground.
+                </p>
+                <h3 class="description__title__2">Living Room:</h3>
+                <p class="description__text mb_18px">
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <h3 class="description__title__2">Dining Room:</h3>
+                <p class="description__text mb_18px">
+                    The benefits of houseplants are endless. In addition to cleaning the air of harmful toxins, they can
+                    help to improve your mood, reduce stress and provide you with better sleep. Fill every room of your
+                    home with houseplants and their restorative qualities will improve your life.
+                </p>
+                <h3 class="description__title__2">Office:</h3>
+                <p class="description__text">
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="description__bottom">
+                <p class="description__text mb_18px">
+                    Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros
+                    eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis
+                    vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere
+                    nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam
+                    gravida vehicula tellus, in imperdiet ligula euismod eget. The ceramic cylinder planters come with a
+                    wooden stand to help elevate your plants off the ground.
+                </p>
+                <h3 class="description__title__2">Living Room:</h3>
+                <p class="description__text mb_18px">
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <h3 class="description__title__2">Dining Room:</h3>
+                <p class="description__text mb_18px">
+                    The benefits of houseplants are endless. In addition to cleaning the air of harmful toxins, they can
+                    help to improve your mood, reduce stress and provide you with better sleep. Fill every room of your
+                    home with houseplants and their restorative qualities will improve your life.
+                </p>
+                <h3 class="description__title__2">Office:</h3>
+                <p class="description__text">
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__container">
+            <div class="products__top">
+                <h2 class="products__top__title">Releted Products</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="products__bottom">
+                            <div class="products__card">
+                                <img src="./img/product/product_1.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Beach Spider Lily</h3>
+                                <p class="products__card__price">$129.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_2.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Blushing Bromeliad</h3>
+                                <p class="products__card__price">$139.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_3.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Aluminum Plant</h3>
+                                <p class="products__card__price">$179.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_4.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Bird's Nest Fern</h3>
+                                <p class="products__card__price">$99.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_5.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Chinese Evergreen</h3>
+                                <p class="products__card__price">$39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="products__bottom">
+                            <div class="products__card">
+                                <img src="./img/product/product_1.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Beach Spider Lily</h3>
+                                <p class="products__card__price">$129.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_2.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Blushing Bromeliad</h3>
+                                <p class="products__card__price">$139.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_3.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Aluminum Plant</h3>
+                                <p class="products__card__price">$179.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_4.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Bird's Nest Fern</h3>
+                                <p class="products__card__price">$99.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_5.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Chinese Evergreen</h3>
+                                <p class="products__card__price">$39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="products__bottom">
+                            <div class="products__card">
+                                <img src="./img/product/product_1.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Beach Spider Lily</h3>
+                                <p class="products__card__price">$129.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_2.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Blushing Bromeliad</h3>
+                                <p class="products__card__price">$139.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_3.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Aluminum Plant</h3>
+                                <p class="products__card__price">$179.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_4.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Bird's Nest Fern</h3>
+                                <p class="products__card__price">$99.00</p>
+                            </div>
+                            <div class="products__card">
+                                <img src="./img/product/product_5.png" alt="" class="products__card__img">
+                                <h3 class="products__card__title">Chinese Evergreen</h3>
+                                <p class="products__card__price">$39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer_card">
+                    <img src="./img/footer/footer_top/card_1.png" alt="" class="footer__card_img" />
+                    <h2 class="footer__card__title">Garden Care</h2>
+                    <p class="footer__Card__text">
+                        We are an online plant shop offering a wide range of cheap and
+                        trendy plants.
+                    </p>
+                </div>
+                <div class="border_left_right">
+                    <div class="footer_card">
+                        <img src="./img/footer/footer_top/card_2.png" alt="" class="footer__card_img" />
+                        <h2 class="footer__card__title">Plant Renovation</h2>
+                        <p class="footer__Card__text">
+                            We are an online plant shop offering a wide range of cheap and
+                            trendy plants.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer_card">
+                    <img src="./img/footer/footer_top/card_3.png" alt="" class="footer__card_img" />
+                    <h2 class="footer__card__title">Watering Graden</h2>
+                    <p class="footer__Card__text">
+                        We are an online plant shop offering a wide range of cheap and
+                        trendy plants.
+                    </p>
+                </div>
+                <div class="footer_top_right">
+                    <h2 class="footer__top__title">
+                        Would you like to join newsletters?
+                    </h2>
+                    <form action="#" class="footer__top__form">
+                        <input type="email" placeholder="enter your email address..." class="footer__email_inp" />
+                        <button class="footer__top_join__btn">Join</button>
+                    </form>
+                    <p class="footer__top__text">
+                        We usually post offers and challenges in newsletter. We’re your
+                        online houseplant destination. We offer a wide range of
+                        houseplants and accessories shipped directly from our (green)house
+                        to yours!
+                    </p>
+                </div>
+            </div>
+            <div class="footer__center">
+                <a href="" class="header-logo-link">
+                    <img src="./img/header/header-logo.svg" alt="" class="header-logo" />
+                </a>
+                <a href="#" class="footer__center__link_1">
+                    <img src="./img/footer/footer_center/Location.svg" alt="" class="footer__center_img" />
+                    <p class="footer__center__text">
+                        70 West Buckingham Ave. Farmingdale, NY 11735
+                    </p>
+                </a>
+                <a href="#" class="footer__center__link_2">
+                    <img src="./img/footer/footer_center/Message.svg" alt="" class="footer__center_img" />
+                    contact@greenshop.com
+                </a>
+                <a href="#" class="footer__center__link_3">
+                    <img src="./img/footer/footer_center/Calling.svg" alt="" class="footer__center_img" />
+                    88 01911 717 490
+                </a>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__list mr-166px">
+                    <h2 class="footer__title__2">My Account</h2>
+                    <li class="footrer__item"><a href="#" class="footer__link">My Account</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Our stores</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Contact us</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Career</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Specials</a></li>
+                </ul>
+                <ul class="footer__list mr-129px">
+                    <h2 class="footer__title__2">Help & Guide</h2>
+                    <li class="footrer__item"><a href="#" class="footer__link">Help Center</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">How to Buy</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Shipping & Delivery</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Product Policy</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">How to Return</a></li>
+                </ul>
+                <ul class="footer__list mr-173px">
+                    <h2 class="footer__title__2">Categories</h2>
+                    <li class="footrer__item"><a href="#" class="footer__link">House Plants</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Potter Plants</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Seeds</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Small Plants</a></li>
+                    <li class="footrer__item"><a href="#" class="footer__link">Accessories</a></li>
+                </ul>
+                <div class="footer__bottom__right">
+                    <div class="footer__Social_Media">
+                        <h2 class="footer__title__2 mb-20px">Social Media</h2>
+                        <div class="footer__social__logo__box">
+                            <a href="#" class="footer__social_link">
+                                <img src="./img/footer/footer_bottom/Facebook.svg" alt="" class="footer__social_logo">
+                            </a>
+                            <a href="#" class="footer__social_link">
+                                <img src="./img/footer/footer_bottom/Instagram.svg" alt="" class="footer__social_logo">
+                            </a>
+                            <a href="#" class="footer__social_link">
+                                <img src="./img/footer/footer_bottom/Twitter.svg" alt="" class="footer__social_logo">
+                            </a>
+                            <a href="#" class="footer__social_link">
+                                <img src="./img/footer/footer_bottom/Linkedin.svg" alt="" class="footer__social_logo">
+                            </a>
+                            <a href="#" class="footer__social_link">
+                                <img src="./img/footer/footer_bottom/Union.svg" alt="" class="footer__social_logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__we_accept">
+                        <h2 class="footer__title__2 mb-13px">We accept</h2>
+                        <a href="#" class="footer__we_accect__link">
+                            <img src="./img/footer/footer_bottom/we_accept.svg" alt="" class="footer__we_accept__logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__link text__align__center">© 2024 GreenShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/shop.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
